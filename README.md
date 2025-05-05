@@ -1,6 +1,6 @@
 # WEB102 Prework - *Name of App Here*
 
-Submitted by: **Your Name Here**
+Submitted by: LoyCurtis Smith
 
 **Name of your app** is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
 
@@ -10,14 +10,18 @@ Time spent: **X** hours spent in total
 
 The following **required** functionality is completed:
 
-* [ ] The introduction section explains the background of the company and how many games remain unfunded.
-* [ ] The Stats section includes information about the total contributions and dollars raised as well as the top two most funded games.
-* [ ] The Our Games section initially displays all games funded by Sea Monster Crowdfunding
-* [ ] The Our Games section has three buttons that allow the user to display only unfunded games, only funded games, or all games.
+* [x] The introduction section explains the background of the company and how many games remain unfunded.
+* [x] The Stats section includes information about the total contributions and dollars raised as well as the top two most funded games.
+* [x] The Our Games section initially displays all games funded by Sea Monster Crowdfunding
+* [x] The Our Games section has three buttons that allow the user to display only unfunded games, only funded games, or all games.
 
 The following **optional** features are implemented:
 
-* [ ] List anything else that you can get done to improve the app functionality!
+* [x] Implemented a search bar within the "Our Games" section that allows users to filter the displayed games by name or description. As the user types or clicks the search button, the list of games dynamically updates to show only the matching results.
+* [x] Implemented navigation to the "Our Games" section from the navigation bar. 
+* [x] Updated the CSS of the website to create a more visually appealing design with a "Sea Monster" color theme. This includes improvements to the navigation bar, overall layout, typography, and hover effects to provide a more engaging user experience.
+
+
 
 ## Video Walkthrough
 

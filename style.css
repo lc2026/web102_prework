@@ -2,7 +2,11 @@
 
 body {
     font-family: 'Cabin';
-    background-color: #758190;
+    /* Updated background color for sea monster theme */
+    background-color: #e0f2f7; /* Subtle Aqua */
+    color: #333333; /* Deep Sea Gray text */
+    margin: 0;
+    /* Removed smooth scrolling behavior */
 }
 
 #tentacles {
@@ -11,25 +15,39 @@ body {
 
 .header {
     display: flex;
-    background-color: lightblue;
+    /* Updated background color for sea monster theme */
+    background-color: #204060; /* Deep Ocean Blue */
     padding: 1%;
     align-items: center;
     margin-left: -10px;
     margin-right: -10px;
     margin-top: -10px;
+    /* Updated text color for sea monster theme */
+    color: #f5f5dc; /* Sandy Beige */
 }
 
 .stats-container {
     display: flex;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 15px #4a868c; /* Subtle shadow with sea monster secondary color */
 }
 
 .stats-card {
-    background-color: #a8b0bc;
+    /* Updated background color for sea monster theme */
+    background-color: #fff; /* White card background */
     border-radius: 7px;
     padding: 1%;
     margin: 1%;
     width: 100%;
     text-align: center;
+    /* Updated border color for sea monster theme */
+    border: 1px solid #4a868c; /* Mystic Teal border */
+}
+
+.stats-card h3 {
+    /* Updated text color for sea monster theme */
+    color: #4a868c; /* Mystic Teal heading */
 }
 
 #num-contributions, #total-raised, #num-games {
@@ -45,7 +63,7 @@ body {
 .game-img {
     width: 100%;
     border-radius: 5px;
-    box-shadow: 0 0 10px #FFFFFF;
+    box-shadow: 0 0 10px #a8b0bc; /* Subtle shadow */
 }
 
 .game-card {
@@ -55,11 +73,30 @@ body {
     width: 300px;
     text-align: center;
     border-radius: 7px;
+    /* Updated border color for sea monster theme */
+    border: 1px solid #4a868c; /* Mystic Teal border */
+    /* Updated box shadow for sea monster theme on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s ease-in-out; /* Subtle hover effect */
 }
 
 .game-card:hover {
     cursor: pointer;
-    box-shadow: 0 0 30px lightblue;
+    /* More pronounced shadow with sea monster accent color on hover */
+    box-shadow: 0 0 20px #f08080;
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.game-card h3 {
+    /* Updated text color for sea monster theme */
+    color: #204060; /* Deep Ocean Blue game title */
+    margin-bottom: 0.5em;
+}
+
+.game-card p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 0.75em;
 }
 
 #button-container {
@@ -72,4 +109,85 @@ button {
     padding: 1%;
     margin: 1%;
     border-radius: 7px;
+    /* Updated background color for sea monster theme */
+    background-color: #4a868c; /* Mystic Teal */
+    /* Updated text color for sea monster theme */
+    color: #f5f5dc; /* Sandy Beige */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    /* Darker shade of sea monster secondary color on hover */
+    background-color: #34617e;
+}
+
+/* Navigation Bar Styles */
+.main-nav {
+    /* Updated background color for sea monster theme */
+    background-color: #204060; /* Deep Ocean Blue */
+    color: #f5f5dc; /* Sandy Beige text */
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5em; /* Increased spacing between links */
+}
+
+.main-nav ul li a {
+    color: #f5f5dc; /* Sandy Beige link text */
+    text-decoration: none;
+    padding: 0.75em 1.25em; /* More padding for larger touch targets */
+    border-radius: 8px; /* More rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+    font-weight: 500; /* Slightly bolder font */
+}
+
+.main-nav ul li a:hover {
+    background-color: #34617e; /* Darker hover background (Deep Ocean Blue) */
+    color: #fff; /* White text on hover */
+}
+
+/* Style the search container within the navbar */
+#search-container {
+    display: flex;
+    align-items: center;
+    gap: 0.75em;
+}
+
+#search-input {
+    padding: 0.6em;
+    border: 1px solid #4a868c; /* Mystic Teal border */
+    border-radius: 8px;
+    color: #333;
+    background-color: #fff;
+    flex-grow: 1; /* Allow input to take more space */
+    max-width: 200px; /* Limit input width */
+}
+
+#search-input:focus {
+    outline: none;
+    border-color: #f08080; /* Coral Orange focus */
+    box-shadow: 0 0 5px rgba(240, 128, 128, 0.5); /* Subtle focus shadow */
+}
+
+#search-button {
+    background-color: #f08080; /* Coral Orange button */
+    color: #f5f5dc; /* Sandy Beige button text */
+    border: none;
+    padding: 0.75em 1.25em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+}
+
+#search-button:hover {
+    background-color: #e06b6b; /* Darker hover background (Coral Orange) */
 }
